@@ -1,33 +1,42 @@
 package com.company;
 
-class Shape2D{
-    double side1,side2;
-    String nameOfShape;
+class Shape2D
+{
+    int dimension1,dimension2;
+    String name_of_shape;
     String color;
-    Shape2D(int s1,int s2,String n,String col){
-        side1 = s1;
-        side2 = s2;
-        nameOfShape = n;
-        color = col;
+
+    Shape2D(int d1,int d2 ,String name, String c)
+    {
+        dimension1 = d1;
+        dimension2 = d2;
+        name_of_shape = name;
+        color = c;
     }
 
-    Shape2D(int s2, String n,String col){
-        side1 = side2=s2;
-        nameOfShape = n;
-        color = col;
+    Shape2D(int d2,String n , String co)
+    {
+        dimension2 = dimension1=d2;
+        name_of_shape = n;
+        color = co;
     }
-    double area(){
-       return side1 *side2;
 
+    int area()
+    {
+        return dimension1 * dimension2;
     }
-    void Display(){
-        System.out.println("Name of shape: " + nameOfShape);
-        System.out.println("Color of Square: " + color);
 
-        System.out.println("Side 1: " + side1);
-        System.out.println("Side 2: " + side2);
+    void Display()
+    {
+        System.out.println("Name of shape:"+ name_of_shape);
+        System.out.println("Color of object:"+ color);
 
-        System.out.println("Area is: "+ area());
+        System.out.println("dimension1:"+ dimension1+"unit");
+        System.out.println("dimension2:"+ dimension2+"unit");
+
+        System.out.println("Area:"+ area()+"square unit");
+
+
     }
 }
 
@@ -40,3 +49,17 @@ public class Main {
         obj2.Display();
     }
 }
+
+//------OUPUT------
+//
+//        Name of shape:rectangle
+//        Color of object:red
+//        dimension1:12unit
+//        dimension2:9unit
+//        Area:108square unit
+//        Name of shape:Square
+//        Color of object:black
+//        dimension1:6unit
+//        dimension2:6unit
+//        Area:36square unit
+//
