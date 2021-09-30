@@ -34,6 +34,6 @@ public class Main {
         for(int a:arr4){
             System.out.print(a + " ");
         }
-        
+
     }
 }
