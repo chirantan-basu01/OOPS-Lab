@@ -82,67 +82,18 @@ public class Main {
     }
 }
 
-
-
-
-//class Sorting{
+//------OUTPUT------
 //
-//    void bubble_sort(int arr[]){
-//        int n=arr.length;
-//        for(int i=0;i<n-1;i++){
-//            for(int j=0;j<n-i-1;j++){
-//                if(arr[j]>arr[j+1]){
-//                    int temp=arr[j];
-//                    arr[j]=arr[j+1];
-//                    arr[j+1]=temp;
-//                }
-//            }
-//        }
-//    }
+//    Enter the elements:
+//        5
+//        5 4 3 2 1
+//        5 5 4 3 2 1
+//        Bubble sorting the array:
+//        1 2 3 4 5 5
+//        Enter the elements:
+//        5
+//        5 4 3 2 11
+//        5 5 4 3 2 11
+//        Selection sorting the array:
+//        3 4 5 5 2 11
 //
-//    void selection_sort(int arr[]){
-//        int n=arr.length;
-//        for(int i=0;i<n-1;i++){
-//            int idx=i;
-//            for(int j=i+1;j<n;j++) {
-//                if (arr[j] < arr[idx]) {
-//                    idx = j;
-//                }
-//                int temp = arr[idx];
-//                arr[idx] = arr[i];
-//                arr[i] = temp;
-//            }
-//        }
-//    }
-//
-//    void display(int arr[]){
-//        int n= arr.length;
-//        for(int i=0;i<n;i++){
-//            System.out.println(arr[i]+ " ");
-//        }
-//        System.out.println();
-//    }
-//}
-//
-//
-//
-//public class Main {
-//
-//    public static void main(String[] args) {
-//        Scanner sc=new Scanner(System.in);
-//        int n;
-//        n=sc.nextInt();
-//        int arr[]=new int [n];
-//        for(int i=0;i<n;i++){
-//            arr[i]=sc.nextInt();
-//        }
-//        Sorting ob=new Sorting();
-//        ob.bubble_sort(arr);
-//        System.out.println("Bubble sorted");
-//        ob.display(arr);
-//        Sorting ob2=new Sorting();
-//        ob2.selection_sort(arr);
-//        System.out.println("Selection sorted");
-//        ob2.display(arr);
-//    }
-//}
